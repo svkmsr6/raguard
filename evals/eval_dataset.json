@@ -1,0 +1,104 @@
+{
+  "name": "raguard-mini-eval-v1",
+  "description": "Tiny labelled eval set for retrieval metrics. Corpus is a general-knowledge FAQ so the eval stays domain-neutral; the mental-health demo shows the guardrails side.",
+  "chunks": [
+    {
+      "id": "gk-01",
+      "text": "The water cycle describes how water evaporates from oceans and lakes, condenses into clouds, falls as precipitation, and returns through rivers and groundwater. The sun powers the cycle."
+    },
+    {
+      "id": "gk-02",
+      "text": "Photosynthesis is the process by which green plants convert sunlight, water, and carbon dioxide into glucose and oxygen. Chlorophyll in chloroplasts absorbs the light energy."
+    },
+    {
+      "id": "gk-03",
+      "text": "The French Revolution began in 1789 when financial crisis and inequality led the Estates-General to convene. It ended the monarchy, produced the Declaration of the Rights of Man, and eventually Napoleon's rise."
+    },
+    {
+      "id": "gk-04",
+      "text": "Compound interest is interest calculated on both the initial principal and the accumulated interest from previous periods. Money grows exponentially because each period's interest earns interest itself."
+    },
+    {
+      "id": "gk-05",
+      "text": "The mitochondria are membrane-bound organelles that generate most of the chemical energy a cell needs as ATP through cellular respiration. They have their own DNA and are inherited maternally."
+    },
+    {
+      "id": "gk-06",
+      "text": "In economics, inflation is a sustained rise in the general price level of goods and services, usually measured with a consumer price index. Central banks typically target a low, stable rate around two percent."
+    },
+    {
+      "id": "gk-07",
+      "text": "The HTTP protocol defines how clients and servers exchange web resources. Key methods include GET for retrieval, POST for submission, PUT and DELETE for modification. Status codes report outcomes."
+    },
+    {
+      "id": "gk-08",
+      "text": "Machine learning models generalise from training data to unseen examples. Overfitting occurs when a model memorises training noise and fails on new data; regularisation and held-out validation mitigate it."
+    },
+    {
+      "id": "gk-09",
+      "text": "The Great Barrier Reef is the world's largest coral reef system, off Australia's northeast coast. It supports thousands of species and faces bleaching threats from rising sea temperatures."
+    },
+    {
+      "id": "gk-10",
+      "text": "A hash function maps data of arbitrary size to a fixed-size value. Good cryptographic hashes are deterministic, fast to compute, and infeasible to reverse, making them central to password storage and data integrity."
+    }
+  ],
+  "examples": [
+    {
+      "question": "How does water move from oceans into the atmosphere?",
+      "gold_chunk_ids": ["gk-01"]
+    },
+    {
+      "question": "What powers the water cycle?",
+      "gold_chunk_ids": ["gk-01"]
+    },
+    {
+      "question": "What do plants need for photosynthesis and what do they produce?",
+      "gold_chunk_ids": ["gk-02"]
+    },
+    {
+      "question": "Which molecule in plants absorbs light energy?",
+      "gold_chunk_ids": ["gk-02"]
+    },
+    {
+      "question": "When did the French Revolution begin and what caused it?",
+      "gold_chunk_ids": ["gk-03"]
+    },
+    {
+      "question": "What document came out of the French Revolution?",
+      "gold_chunk_ids": ["gk-03"]
+    },
+    {
+      "question": "Why does compound interest make money grow faster over time?",
+      "gold_chunk_ids": ["gk-04"]
+    },
+    {
+      "question": "Which organelle produces ATP in a cell?",
+      "gold_chunk_ids": ["gk-05"]
+    },
+    {
+      "question": "How is mitochondrial DNA inherited?",
+      "gold_chunk_ids": ["gk-05"]
+    },
+    {
+      "question": "What inflation rate do central banks usually target?",
+      "gold_chunk_ids": ["gk-06"]
+    },
+    {
+      "question": "What is the difference between GET and POST in HTTP?",
+      "gold_chunk_ids": ["gk-07"]
+    },
+    {
+      "question": "What causes a machine learning model to overfit?",
+      "gold_chunk_ids": ["gk-08"]
+    },
+    {
+      "question": "What threatens the Great Barrier Reef?",
+      "gold_chunk_ids": ["gk-09"]
+    },
+    {
+      "question": "What properties make a hash function suitable for password storage?",
+      "gold_chunk_ids": ["gk-10"]
+    }
+  ]
+}
