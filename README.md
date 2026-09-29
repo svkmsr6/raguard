@@ -26,10 +26,17 @@ flowchart LR
 
 ## Quickstart
 
-Runs fully offline — no API keys, no model downloads:
+Install the package directly from PyPI:
 
 ```bash
-git clone <your-fork-url> && cd raguard
+pip install raguard-svkmsr6
+```
+
+Runs fully offline — no API keys, no model downloads. To run the tests or examples, you can clone the repository:
+
+```bash
+git clone https://github.com/svkmsr6/raguard.git
+cd raguard
 pip install -e ".[dev]"
 pytest                          # test suite (mock LLM/embedder only)
 python examples/mental_health_demo.py   # end-to-end demo with guardrails
