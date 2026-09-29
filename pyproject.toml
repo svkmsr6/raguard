@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "raguard"
+name = "raguard-svkmsr6"
 version = "0.1.0"
 description = "Evaluation-first RAG pipeline: retrieval, generation, deterministic metrics, and guardrails for sensitive domains."
 readme = "README.md"
